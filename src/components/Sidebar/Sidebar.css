@@ -1,0 +1,21 @@
+
+.component-container {
+    height: 70vh;
+    width: 250px;
+    top: 0; left: 0;
+    background-color: #d7ec63;
+    padding-top: 20px;
+  }
+
+  .component-container a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .component-container a:hover {
+    color: #f1f1f1;
+  }
