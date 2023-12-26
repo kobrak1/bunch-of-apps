@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./QuoteGenerator.scss";
 
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState([]);
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
 
   // Function to make API call
   const fetchData = async () => {
@@ -26,15 +26,15 @@ const QuoteGenerator = () => {
     }
   };
 
-  useEffect(() => {
-    fetchData();
-  }, [isClicked]);
+  // useEffect(() => {
+  //   fetchData();
+  // }, [isClicked]);
 
   console.log(typeof quote);
 
   return (
     <div className="quote-generator">
-        <button onClick={() => setIsClicked(!isClicked)}>Generate Quote</button>
+        <button onClick={fetchData}>Generate Quote</button>
       {quote.length > 0 && (
         quote.map((data, index) => (
           <p key={index}>{data.Quote} <br /> - {data.Author}</p>
