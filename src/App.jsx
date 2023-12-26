@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import PlanetInfoPage from "./pages/PlanetInfoPage";
 import FaqAccordionPage from "./pages/FaqAccordionPage";
 import QuoteGenerator from "./components/Apps/QuoteGenerator/QuoteGenerator";
+import ShoppingList from "./components/Apps/ShoppingList/ShoppingList";
 
 const App = () => {
   const {darkMode} = useContext(MainContext);
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/planet-info" element={<PlanetInfoPage />} />
       <Route path="/faq" element={<FaqAccordionPage />} />
       <Route path="/quote-generator" element={<QuoteGenerator />} />
+      <Route path="/shopping-list" element={<ShoppingList />} />
     </Routes>
   );
 };
