@@ -1,30 +1,47 @@
-import { useState } from "react"
-import "./ShoppingList.scss"
+import { useState } from "react";
+import "./ShoppingList.scss";
 
 const ShoppingList = () => {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState([]);
 
+  // function to add item
   const onSubmit = (e) => {
     e.preventDefault();
-    const form = e.target
+    const form = e.target;
     const input = form.item;
     const newItems = [...items, input.value];
-    setItems(newItems)
-    form.reset()
-  }
+    setItems(newItems);
+    form.reset();
+  };
+
+  // function to remove item
+  const onRemoveItem = (index) => {
+    const updatedItems = [...items];
+    updatedItems.splice(index, 1);
+    setItems(updatedItems);
+  };
 
   return (
-    <div>
+    <div className="shopping-list">
       <form onSubmit={onSubmit}>
         <input type="text" name="item" placeholder="Add a new item" />
         <button>Add</button>
-      </form> <br />
-      <div>
-        {items}
-      </div> <br />
-
+      </form>{" "}
+      <br />
+      {items &&
+        items.map((item, index) => (
+          <li key={index}>
+            {item}
+            <span
+              className="material-symbols-outlined"
+              onClick={() => onRemoveItem(index)}
+            >
+              delete
+            </span>
+          </li>
+        ))}
     </div>
-  )
-}
+  );
+};
 
-export default ShoppingList
+export default ShoppingList;

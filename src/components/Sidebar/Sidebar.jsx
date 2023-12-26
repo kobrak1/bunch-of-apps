@@ -9,6 +9,7 @@ const Sidebar = () => {
         <a href="/faq">FAQ Accordion</a>
         <a href="/quote-generator">Quote Generator</a>
         <a href="/shopping-list">Shopping List</a>
+        <a href="/github-user-search">Github User Search</a>
       </div>
     </aside>
   );
