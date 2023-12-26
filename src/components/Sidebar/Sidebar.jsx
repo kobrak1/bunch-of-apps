@@ -6,8 +6,8 @@ const Sidebar = () => {
       <div className="component-container">
         <a href="/">Image Carousel</a>
         <a href="/planet-info">Planet Info</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="/faq">FAQ Accordion</a>
+        <a href="/quote-generator">Quote Generator</a>
       </div>
     </aside>
   );

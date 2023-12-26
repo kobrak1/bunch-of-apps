@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { MainContext } from "../../context/mainProvider";
-import "./Header.css";
+import "./Header.scss";
 
 const Header = () => {
   const {darkMode, handleDarkMode} = useContext(MainContext);

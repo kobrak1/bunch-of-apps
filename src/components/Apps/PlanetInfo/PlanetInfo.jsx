@@ -1,8 +1,9 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios";
+import "./PlanetInfo.scss";
 
 const PlanetInfo = () => {
-  const [planetName, setPlanetName] = useState("");
+  const [planetName, setPlanetName] = useState("Earth");
   const [planetData, setPlanetData] = useState(null);
 
   useEffect(() => {
@@ -37,11 +38,7 @@ const PlanetInfo = () => {
 
   return (
     <div>
-      <input
-        type="text"
-        value={planetName}
-        onChange={handleInput}
-      />
+      <input type="text" value={planetName} onChange={handleInput} />
       {planetData && (
         <div className="show-data">
           {planetData.map((data, index) => (
@@ -50,7 +47,11 @@ const PlanetInfo = () => {
                 <>
                   <p>{data.description}</p>
                   <div>
-                    <img src={data.imgSrc.img} alt={`image of ${planetName}`} style={{width:"10%"}} />
+                    <img
+                      src={data.imgSrc.img}
+                      alt={`image of ${planetName}`}
+                      style={{ width: "10%" }}
+                    />
                   </div>
                 </>
               )}

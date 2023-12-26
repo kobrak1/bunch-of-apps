@@ -2,9 +2,9 @@ import Header from "../components/header/header";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Footer from "../components/Footer/Footer";
 import Proptypes from "prop-types";
-import "./MainLayout.css";
 import { useContext } from "react";
 import { MainContext } from "../context/mainProvider";
+import "./MainLayout.scss";
 
 const MainLayout = ({ children }) => {
   const { darkMode } = useContext(MainContext);

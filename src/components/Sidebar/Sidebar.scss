@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.component-container {
+	height: 70vh;
+	width: 250px;
+	top: 0;
+	left: 0;
+	background-color: $secondary-color;
+	padding-top: 20px;
+	a {
+		padding: 10px;
+		text-decoration: none;
+		font-size: 18px;
+		color: $color_2;
+		display: block;
+		transition: 0.3s;
+		&:hover {
+			color: $color_1;
+		}
+	}
+}

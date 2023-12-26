@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  
+    .question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      width: 400px;
+      border-radius: 0.5rem;
+      background-color: $primary-color;
+      transition: 0.2s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: $secondary-color;
+      }
+  
+      &.open {
+        background-color: $secondary-color;
+  
+        h3 {
+          color: $faq-color; // Change color for open state
+        }
+      }
+  
+      .before-open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+  
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          transition: color 0.2s ease; // Add transition for color change
+        }
+  
+        p {
+          font-size: 14px;
+        }
+      }
+  
+      span {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+  
