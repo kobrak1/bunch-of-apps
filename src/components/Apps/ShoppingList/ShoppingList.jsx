@@ -24,14 +24,22 @@ const ShoppingList = () => {
   return (
     <div className="shopping-list">
       <form onSubmit={onSubmit}>
-        <input type="text" name="item" placeholder="Add a new item" />
+        <input
+          type="text"
+          name="item"
+          required="true"
+          placeholder="Add a new item"
+        />
         <button>Add</button>
       </form>{" "}
       <br />
       {items &&
         items.map((item, index) => (
           <li key={index}>
-            {item}
+            <div className="content">
+              <input type="checkbox" style={{ marginRight: "10px" }} />
+              <div className="item">{item}</div>
+            </div>
             <span
               className="material-symbols-outlined"
               onClick={() => onRemoveItem(index)}
