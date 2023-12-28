@@ -10,6 +10,7 @@ const Sidebar = () => {
         <a href="/quote-generator">Quote Generator</a>
         <a href="/shopping-list">Shopping List</a>
         <a href="/github-user-search">Github User Search</a>
+        <a href="/video-player">Video Player</a>
       </div>
     </aside>
   );

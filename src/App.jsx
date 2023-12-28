@@ -7,6 +7,7 @@ import FaqAccordionPage from "./pages/FaqAccordionPage";
 import QuoteGenerator from "./components/Apps/QuoteGenerator/QuoteGenerator";
 import ShoppingList from "./components/Apps/ShoppingList/ShoppingList";
 import GithubuserSearch from "./components/Apps/GithubUserSearch/GithubuserSearch";
+import VideoPlayer from "./components/Apps/VideoPlayer/VideoPlayer";
 
 const App = () => {
   const {darkMode} = useContext(MainContext);
@@ -19,6 +20,7 @@ const App = () => {
       <Route path="/quote-generator" element={<QuoteGenerator />} />
       <Route path="/shopping-list" element={<ShoppingList />} />
       <Route path="/github-user-search" element={<GithubuserSearch />} />
+      <Route path="/video-player" element={<VideoPlayer />} />
     </Routes>
   );
 };

@@ -3,7 +3,6 @@ import "./QuoteGenerator.scss";
 
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState([]);
-  // const [isClicked, setIsClicked] = useState(false);
 
   // Function to make API call
   const fetchData = async () => {
@@ -25,10 +24,6 @@ const QuoteGenerator = () => {
       console.error("Error:", error);
     }
   };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, [isClicked]);
 
   console.log(typeof quote);
 
