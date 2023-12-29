@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MainContext } from "./context/mainProvider";
+import { MainContext } from "./context/MainProvider";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import PlanetInfoPage from "./pages/PlanetInfoPage";

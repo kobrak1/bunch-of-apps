@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Footer from "../components/Footer/Footer";
 import Proptypes from "prop-types";
 import { useContext } from "react";
-import { MainContext } from "../context/mainProvider";
+import { MainContext } from "../context/MainProvider";
 import "./MainLayout.scss";
 
 const MainLayout = ({ children }) => {

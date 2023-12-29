@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MainContext } from "../../context/mainProvider";
+import { MainContext } from "../../context/MainProvider";
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
 

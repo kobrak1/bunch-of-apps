@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import "./FaqAccordion.scss";
-import { MainContext } from "../../../context/mainProvider";
+import { MainContext } from "../../../context/MainProvider";
 
 const FaqAccordion = () => {
   const [isOpen, setIsOpen] = useState(null);
