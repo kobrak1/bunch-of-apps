@@ -8,6 +8,7 @@ import QuoteGenerator from "./components/Apps/QuoteGenerator/QuoteGenerator";
 import ShoppingList from "./components/Apps/ShoppingList/ShoppingList";
 import GithubuserSearch from "./components/Apps/GithubUserSearch/GithubuserSearch";
 import VideoPlayer from "./components/Apps/VideoPlayer/VideoPlayer";
+import BmiCalculator from "./components/Apps/BmiCalculator/BmiCalculator";
 
 const App = () => {
   const {darkMode} = useContext(MainContext);
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/shopping-list" element={<ShoppingList />} />
       <Route path="/github-user-search" element={<GithubuserSearch />} />
       <Route path="/video-player" element={<VideoPlayer />} />
+      <Route path="/bmi-calculator" element={<BmiCalculator />} />
     </Routes>
   );
 };

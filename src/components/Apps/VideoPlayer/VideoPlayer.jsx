@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Video from "./Video";
+import Menu from "./Menu";
 import "./VideoPlayer.scss";
-import YouTube from "react-youtube";
 
 const VideoPlayer = () => {
   const [videoSrc, setVideoSrc] = useState("");
@@ -13,42 +14,23 @@ const VideoPlayer = () => {
     donkey: "MIQKlHSD89E",
   };
 
+  // extract the keys from videos object
   const videoNames = Object.keys(videos);
 
+  // function to update the videoSrc state
   const onSelectVideo = (e) => {
     setVideoSrc(e);
   };
 
-  const Video = ({ videoId }) => {
-    return (
-      <div>
-        <YouTube videoId={videoId} opts={{ width: "640", height: "360" }} />
-      </div>
-    );
-  };
-
-  const Menu = ({ onSelectVideo, videoValues }) => {
-    return (
-      <form className="radio-buttons">
-        {videoValues.map((value, i) => (
-          <div className="video-inputs" key={i}>
-            <input
-              type="radio"
-              name="src"
-              value={value}
-              onChange={() => onSelectVideo(videos[value])}
-            />
-            {value}
-          </div>
-        ))}
-      </form>
-    );
-  };
+  // update the state and force re-render when videoSrc changes
+  useEffect(() => {}, [videoSrc]);
 
   return (
     <div className="video-player">
-      <h1>Video Player</h1>
-      <Menu videoValues={videoNames} onSelectVideo={onSelectVideo} />
+      <div className="title">
+        <h1>Video Player</h1>
+        <Menu videoValues={videoNames} onSelectVideo={onSelectVideo} videos={videos} />
+      </div>
       <Video videoId={videoSrc} />
     </div>
   );

@@ -11,6 +11,7 @@ const Sidebar = () => {
         <a href="/shopping-list">Shopping List</a>
         <a href="/github-user-search">Github User Search</a>
         <a href="/video-player">Video Player</a>
+        <a href="/bmi-calculator">BMI Calculator</a>
       </div>
     </aside>
   );
