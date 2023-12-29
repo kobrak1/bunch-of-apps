@@ -1,13 +1,16 @@
 import { useContext } from "react";
 import { MainContext } from "../../context/mainProvider";
 import "./Header.scss";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const {darkMode, handleDarkMode} = useContext(MainContext);
+  const { darkMode, handleDarkMode } = useContext(MainContext);
   return (
     <header>
       <div className="header-wrapper">
-        <a href="#">LOGO</a>
+        <NavLink to={"/"} style={{width:"70px", height:"70px"}}>
+          <img src="../../../public/img/logo3_img.png" alt="img not found" style={{width:"100%"}} />
+        </NavLink>
         <div className="container">
           <a href="/">Home</a>
           <a href="#">Blog</a>
@@ -18,8 +21,10 @@ const Header = () => {
           <span
             className={`material-symbols-outlined ${darkMode && "dark"}`}
             onClick={handleDarkMode}
-            style={{cursor:"pointer"}}
-          >{darkMode ? "light_mode" : "dark_mode"}</span>
+            style={{ cursor: "pointer" }}
+          >
+            {darkMode ? "light_mode" : "dark_mode"}
+          </span>
         </div>
       </div>
     </header>

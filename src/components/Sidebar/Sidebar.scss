@@ -2,7 +2,7 @@
 
 .component-container {
 	height: 70vh;
-	width: 250px;
+	width: 220px;
 	top: 0;
 	left: 0;
 	background-color: $secondary-color;
@@ -10,12 +10,15 @@
 	a {
 		padding: 10px;
 		text-decoration: none;
+		margin: 0 1rem;
 		font-size: 18px;
-		color: $color_2;
+		color: $color_1;
 		display: block;
 		transition: 0.3s;
 		&:hover {
-			color: $color_1;
+			color: $color_2;
+			background-color: $primary-color;
+
 		}
 	}
 }
