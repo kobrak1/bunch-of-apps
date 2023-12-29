@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { MainContext } from "../../context/mainProvider";
-import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import "./Header.scss";
 
 const Header = () => {
   const { darkMode, handleDarkMode } = useContext(MainContext);
