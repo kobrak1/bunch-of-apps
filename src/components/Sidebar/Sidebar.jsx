@@ -5,13 +5,13 @@ const Sidebar = () => {
   return (
     <aside>
       <div className="component-container">
-        <p><NavLink to={"/"}> Image Carousel </NavLink></p>
-        <p><NavLink to={"/planet-info"}> Planet Info </NavLink></p>
-        <p><NavLink to={"/quote-generator"}> Quote Generator </NavLink></p>
-        <p><NavLink to={"/shopping-list"}> Shopping List </NavLink></p>
-        <p><NavLink to={"/github-user-search"}> GitHub User Search </NavLink></p>
-        <p><NavLink to={"/video-player"}> Video Player </NavLink></p>
-        <p><NavLink to={"/bmi-calculator"}> BMI Calculator </NavLink></p>
+          <NavLink to={"/"}> <p>Image Carousel</p> </NavLink>
+          <NavLink to={"/planet-info"}> <p>Planet Info</p> </NavLink>
+          <NavLink to={"/quote-generator"}> <p>Quote Generator</p> </NavLink>
+          <NavLink to={"/shopping-list"}> <p>Shopping List</p> </NavLink>
+          <NavLink to={"/github-user-search"}> <p>GitHub User Search</p> </NavLink>
+          <NavLink to={"/video-player"}> <p>Video Player</p> </NavLink>
+          <NavLink to={"/bmi-calculator"}> <p>BMI Calculator</p> </NavLink>
       </div>    
     </aside>
   );
