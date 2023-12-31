@@ -10,7 +10,12 @@ const Footer = () => {
               <a href="#">LOGO</a>
             </div>
             <div className="footer desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              The primary goal of this project is to create a dynamic and
+              interactive web application that goes beyond the conventional
+              portfolio format. It serves as a learning ground for advanced
+              React concepts, providing hands-on experience with state
+              management, routing, and algorithmic problem-solving in a React
+              environment.
             </div>
             <div className="footer-contact">(+10)123 456 789</div>
           </div>
