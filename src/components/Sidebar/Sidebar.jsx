@@ -5,6 +5,7 @@ const Sidebar = () => {
   return (
     <aside>
       <div className="component-container">
+        <NavLink to={"/"}> <p>Image Carousel</p> </NavLink>
         <NavLink to={"/planet-info"}> <p>Planet Info</p> </NavLink>
         <NavLink to={"/quote-generator"}> <p>Quote Generator</p> </NavLink>
         <NavLink to={"/shopping-list"}> <p>Shopping List</p> </NavLink>
