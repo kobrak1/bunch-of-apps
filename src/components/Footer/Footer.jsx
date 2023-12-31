@@ -10,9 +10,7 @@ const Footer = () => {
               <a href="#">LOGO</a>
             </div>
             <div className="footer desc">
-              The primary goal of this project is to create a dynamic and
-              interactive web application that goes beyond the conventional <br />
-              portfolio format. It serves as a learning ground for advanced
+              The primary goal of this project is to show the implementation of routing, state management and SASS basics. It serves as a learning ground for advanced
               React concepts, providing hands-on experience with state <br />
               management, routing, and algorithmic problem-solving in a React
               environment.
