@@ -11,9 +11,9 @@ const Footer = () => {
             </div>
             <div className="footer desc">
               The primary goal of this project is to create a dynamic and
-              interactive web application that goes beyond the conventional
+              interactive web application that goes beyond the conventional <br />
               portfolio format. It serves as a learning ground for advanced
-              React concepts, providing hands-on experience with state
+              React concepts, providing hands-on experience with state <br />
               management, routing, and algorithmic problem-solving in a React
               environment.
             </div>
