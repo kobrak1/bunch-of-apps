@@ -6,11 +6,11 @@ import MainLayout from "./layouts/MainLayout.jsx";
 import "./styles/main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <HashRouter>
+  <BrowserRouter>
     <MainProvider>
       <MainLayout>
         <App />
       </MainLayout>
     </MainProvider>
-  </HashRouter>
+  </BrowserRouter>
 );
