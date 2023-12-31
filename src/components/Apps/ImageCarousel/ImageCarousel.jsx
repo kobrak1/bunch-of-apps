@@ -4,14 +4,14 @@ import "./ImageCarousel.scss";
 const ImageCarousel = () => {
   const [current, setCurrent] = useState(0);
   const images = [
-    "../../../public/img/img1.png",
-    "../../../public/img/img2.png",
-    "../../../public/img/img3.png",
-    "../../../public/img/img4.png",
-    "../../../public/img/img5.png",
-    "../../../public/img/img6.png",
-    "../../../public/img/img7.png",
-    "../../../public/img/img8.png",
+    "https://i.pinimg.com/564x/44/1a/da/441ada6a279071462dd6498089902604.jpg",
+    "https://i.pinimg.com/564x/cf/87/38/cf8738ebadc0c2ddfded3002b07b81d9.jpg",
+    "https://i.pinimg.com/564x/92/f1/b4/92f1b40ab08aeac3da07b372c3775c4b.jpg",
+    "https://i.pinimg.com/564x/03/31/c0/0331c0eeb78bc154453efc6e70c43b8d.jpg",
+    "https://i.pinimg.com/564x/f2/07/c2/f207c2ae9fde3450108df3695b645953.jpg",
+    "https://i.pinimg.com/564x/78/5e/be/785ebe4752d36420997ea6bcfedf89c0.jpg",
+    "https://i.pinimg.com/564x/74/5b/c0/745bc0a0edf541882a92579ad0d6e926.jpg",
+    "https://i.pinimg.com/564x/a7/8d/a9/a78da902fc9055a2b0e0e5041da2b8a4.jpg",
   ];
 
   // Previous button
