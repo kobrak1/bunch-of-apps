@@ -12,6 +12,7 @@ const Sidebar = () => {
           <NavLink to={"/github-user-search"}> <p>GitHub User Search</p> </NavLink>
           <NavLink to={"/video-player"}> <p>Video Player</p> </NavLink>
           <NavLink to={"/bmi-calculator"}> <p>BMI Calculator</p> </NavLink>
+          <NavLink to={"/product-table"}> <p>Product Table</p> </NavLink>
       </div>    
     </aside>
   );
