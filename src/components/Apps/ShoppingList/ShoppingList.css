@@ -1,0 +1,28 @@
+.shopping-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid #a8a6a6;
+  border-radius: 0.5rem;
+  transition: 0.2s ease;
+}
+.shopping-list li:hover {
+  background-color: #e8e6e6;
+}
+.shopping-list li .content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.shopping-list li .content .item {
+  display: flex;
+  max-width: 200px;
+  overflow: hidden;
+}
+.shopping-list span {
+  color: #5b5b5b;
+  cursor: pointer;
+}/*# sourceMappingURL=ShoppingList.css.map */

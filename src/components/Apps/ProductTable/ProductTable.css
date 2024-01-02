@@ -1,0 +1,56 @@
+.product-table {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.product-table .drop-down {
+  margin: 2rem;
+  transition: opacity 0.5s ease;
+}
+.product-table .drop-down:hover .drop-down-content {
+  opacity: 1;
+}
+.product-table .drop-down button {
+  width: 107px;
+  height: 30px;
+  border: 1px solid #009879;
+  transition: 0.2s ease;
+}
+.product-table .drop-down button:hover .drop-down-content {
+  border-radius: 0.5rem;
+}
+.product-table .drop-down .drop-down-content li {
+  border-bottom: 1px solid #009879;
+  padding: 5px 15px;
+}
+.product-table .drop-down .drop-down-content li:hover {
+  background-color: #f3f3f3;
+}
+.product-table .content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  min-width: 400px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.product-table .content-table thead tr {
+  color: #fff;
+  background-color: #009879;
+  text-align: left;
+  font-weight: bold;
+}
+.product-table .content-table th,
+.product-table .content-table td {
+  padding: 12px 15px;
+}
+.product-table .content-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.product-table .content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.product-table .content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}/*# sourceMappingURL=ProductTable.css.map */

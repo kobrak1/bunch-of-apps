@@ -10,9 +10,12 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 60px 0;
+  padding: 25px 0;
   border-bottom: 1px solid #dee0ea;
   border-top: 1px solid #dee0ea;
+}
+.footer-container .widgets-row .footer.desc {
+  font-size: small;
 }
 .footer-container .widgets-row .widget-nav-menu ul {
   padding: 0;

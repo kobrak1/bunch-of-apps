@@ -1,9 +1,13 @@
-import React from "react";
-import ProductInfo from "./ProductInfo";
-import "./ProductTable.scss";
+import React, { useState } from "react";
 import MainTable from "./MainTable";
+import CategoryDropdown from "./CategoryDropDown";
+import "./ProductTable.scss";
 
 const ProductTable = () => {
+  // state that holds the selected category info
+  const [selectedCategory, setSelectedCategory] = useState("Fruits");
+
+  // the array that holds the product infos
   const products = [
     { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
     { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
@@ -13,10 +17,20 @@ const ProductTable = () => {
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
 
+  // a function that extracts the category names from products arrat as a set
+  function categoryArray(items) {
+    const categories = items.map((item) => item.category);
+    const categoryNames = [...new Set(categories)];
+    return categoryNames;
+  }
+
   return (
-    <div>
-      <MainTable category="Fruits" items={products} /> <hr />
-      <MainTable category="Vegetables" items={products} />
+    <div className="product-table">
+      <CategoryDropdown
+        categories={categoryArray(products)}
+        onSelectCategory={(category) => setSelectedCategory(category)}
+      />
+      <MainTable category={selectedCategory} items={products} />
     </div>
   );
 };

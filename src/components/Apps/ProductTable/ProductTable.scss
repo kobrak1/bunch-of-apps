@@ -1,8 +1,66 @@
 @import "../../../styles/variables";
 
-.content-table {
-    border-collapse:collapse;
-    margin: 25px 0;
-    font-size: 1rem;
-    min-width: 400px;
+.product-table {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    .drop-down {
+        margin: 2rem;
+        transition: opacity .5s ease;
+        &:hover .drop-down-content {
+            opacity: 1;
+        }
+        button {
+            width: 107px;
+            height: 30px;
+            border: 1px solid #009879;
+            transition: .2s ease;
+            &:hover .drop-down-content {
+                border-radius: .5rem;
+            }
+        }
+        .drop-down-content {
+            li {
+                border-bottom: 1px solid #009879;
+                padding: 5px 15px;
+                &:hover {
+                    background-color: #f3f3f3;
+                }
+            }
+        }
+    }
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        border-radius: .5rem;
+        font-size: 1rem;
+        min-width: 400px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+
+        thead tr {
+            color: #fff;
+            background-color: #009879;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #ddd;
+
+            &:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            &:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+        }
+    }
 }

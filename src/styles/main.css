@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  color: #5b5b5b;
 }
 
 li {
@@ -27,24 +28,4 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-.header-wrapper a {
-  color: #fff;
-  transition: 0.3s ease;
-}
-.header-wrapper a:hover {
-  background-color: #f77e21;
-}
-
-header {
-  z-index: 2;
-}
-
-footer {
-  z-index: 2;
-}
-
-aside {
-  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

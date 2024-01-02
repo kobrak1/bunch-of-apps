@@ -1,19 +1,21 @@
 .component-container {
   height: 70vh;
-  width: 250px;
+  width: 220px;
   top: 0;
   left: 0;
   background-color: #fac213;
   padding-top: 20px;
 }
-.component-container a {
+.component-container p {
   padding: 10px;
   text-decoration: none;
+  margin: 0 1rem;
   font-size: 18px;
-  color: #818181;
+  color: #5b5b5b;
   display: block;
   transition: 0.3s;
 }
-.component-container a:hover {
+.component-container p:hover {
   color: #f1f1f1;
+  background-color: #f8c9a5;
 }/*# sourceMappingURL=Sidebar.css.map */

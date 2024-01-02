@@ -5,6 +5,7 @@ export const MainContext = createContext();
 
 const MainProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
+  
 
   // function to handle dark mode
   const handleDarkMode = () => {
