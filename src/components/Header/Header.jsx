@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <div className="header-wrapper">
         <NavLink to={"/"} style={{width:"70px", height:"70px"}}>
-          <img src="../../../public/img/logo3_img.png" alt="img not found" style={{width:"100%"}} />
+          <img src="./public/img/logo3_img.png" alt="img not found" style={{width:"100%"}} />
         </NavLink>
         <div className="container">
           <a href="/">Home</a>
