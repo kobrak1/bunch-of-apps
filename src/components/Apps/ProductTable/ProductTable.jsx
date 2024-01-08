@@ -19,7 +19,7 @@ const ProductTable = () => {
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
     { category: "Dairy", price: "$1", stocked: true, name: "Milk" },
     { category: "Dairy", price: "$4", stocked: false, name: "Cheese" },
-    { category: "Dairy", price: "$5", stocked: true, name: "Yoghut" },
+    { category: "Dairy", price: "$5", stocked: true, name: "Yoghurt" },
     { category: "Dairy", price: "$2", stocked: true, name: "Butter" },
   ];
 

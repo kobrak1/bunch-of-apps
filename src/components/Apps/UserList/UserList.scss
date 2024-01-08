@@ -1,0 +1,38 @@
+.user-list {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    border: 1px solid gray;
+    margin-top: 2rem;
+
+    .left,
+    .right {
+        flex: 1;
+        border: 1px solid gray;
+    }
+
+    .left {
+        padding: 1rem;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                cursor: pointer;
+                transition: .2s ease;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+    .right {
+        padding: 1rem;
+        .user-info .information li {
+            padding-bottom: 5px;
+        }
+    }
+}

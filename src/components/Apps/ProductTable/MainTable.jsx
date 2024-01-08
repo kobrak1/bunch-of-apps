@@ -19,3 +19,4 @@ const MainTable = ({ category, items }) => {
 };
 
 export default MainTable;
+
