@@ -12,7 +12,7 @@ const BmiCalculatorDetail = () => {
   // get data when the component mounted
   useEffect(() => {
     const fetchData = async () => {
-      if (!user?.id || user.id !== Number(id)) {
+      if (!user?.id || user.id !== Number(id)) {  
         try {
           const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
 
