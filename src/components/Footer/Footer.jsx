@@ -15,7 +15,7 @@ const Footer = () => {
               management, routing, and algorithmic problem-solving in a React
               environment.
             </div>
-            <div className="footer-contact">(+10)123 456 789</div>
+            <div className="footer-contact">For futher information reachme out on "aburakkarhan@gmail.com"</div>
           </div>
           <div className="widget-nav-menu">
             <h4>Information</h4>
