@@ -1,0 +1,33 @@
+.user-list {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  border: 1px solid gray;
+  margin-top: 2rem;
+}
+.user-list .left,
+.user-list .right {
+  flex: 1;
+  border: 1px solid gray;
+}
+.user-list .left {
+  padding: 1rem;
+}
+.user-list .left ul {
+  margin: 0;
+  padding: 0;
+}
+.user-list .left ul li {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.user-list .left ul li:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+.user-list .right {
+  padding: 1rem;
+}
+.user-list .right .user-info .information li {
+  padding-bottom: 5px;
+}/*# sourceMappingURL=UserList.css.map */

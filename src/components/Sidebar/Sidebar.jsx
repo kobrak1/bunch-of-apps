@@ -14,6 +14,7 @@ const Sidebar = () => {
           <NavLink to={"/bmi-calculator"}> <p>BMI Calculator</p> </NavLink>
           <NavLink to={"/product-table"}> <p>Product Table</p> </NavLink>
           <NavLink to={"/user-list"}> <p>User List</p> </NavLink>
+          <NavLink to={"/formik-forms"}> <p>Formik Forms</p> </NavLink>
       </div>    
     </aside>
   );

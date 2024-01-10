@@ -14,6 +14,9 @@ footer {
   border-bottom: 1px solid #dee0ea;
   border-top: 1px solid #dee0ea;
 }
+.footer-container .widgets-row .brand-info .footer-contact {
+  margin-top: 0.5rem;
+}
 .footer-container .widgets-row .footer.desc {
   font-size: small;
 }
