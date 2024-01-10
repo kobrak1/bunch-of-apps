@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import "./BmiCalculator.scss";
 
 const BmiCalculator = () => {
@@ -14,7 +15,7 @@ const BmiCalculator = () => {
   const getData = async () => {
     try {
       const response = await fetch(
-        "https://jsonplaceholder.typicode.com/users"
+        `https://jsonplaceholder.typicode.com/users`
       );
       const data = await response.json();
       setUsersData(data);
@@ -30,7 +31,12 @@ const BmiCalculator = () => {
     <div>
       <h2>Users</h2>
       {loading && <div>Loading...</div>}
-      {usersData && usersData.map((data) => <li key={data.id}>{data.name}</li>)}
+      {usersData &&
+        usersData.map((data) => (
+          <li key={data.id}>
+            <Link to={`${data.id}`} state={data}>{data.name}</Link>
+          </li>
+        ))}
     </div>
   );
 };

@@ -9,6 +9,7 @@ import ShoppingList from "./components/Apps/ShoppingList/ShoppingList";
 import GithubuserSearch from "./components/Apps/GithubUserSearch/GithubuserSearch";
 import VideoPlayer from "./components/Apps/VideoPlayer/VideoPlayer";
 import BmiCalculator from "./components/Apps/BmiCalculator/BmiCalculator";
+import BmiCalculatorDetail from "./components/Apps/BmiCalculator/BmiCalculatorDetail";
 import ProductTable from "./components/Apps/ProductTable/ProductTable";
 import UserList from "./components/Apps/UserList/UserList";
 
@@ -25,6 +26,7 @@ const App = () => {
       <Route path="/github-user-search" element={<GithubuserSearch />} />
       <Route path="/video-player" element={<VideoPlayer />} />
       <Route path="/bmi-calculator" element={<BmiCalculator />} />
+      <Route path="/bmi-calculator/:id" element={<BmiCalculatorDetail />} />
       <Route path="/product-table" element={<ProductTable />} />
       <Route path="/user-list" element={<UserList />} />
     </Routes>

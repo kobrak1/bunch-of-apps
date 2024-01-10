@@ -3,7 +3,7 @@ import Users from "./Users";
 import "./UserList.scss";
 import UserInfo from "./UserInfo";
 
-const UserList = ({}) => {
+const UserList = () => {
   const [userId, setUserId] = useState(null);
 
   return (
