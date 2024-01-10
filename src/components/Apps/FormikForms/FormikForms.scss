@@ -1,0 +1,11 @@
+.user-registration-form {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-bottom: .5rem;
+        }
+    }
+}
