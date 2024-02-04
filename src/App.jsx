@@ -13,6 +13,7 @@ import BmiCalculatorDetail from "./components/Apps/BmiCalculator/BmiCalculatorDe
 import ProductTable from "./components/Apps/ProductTable/ProductTable";
 import UserList from "./components/Apps/UserList/UserList";
 import FormikForms from "./components/Apps/FormikForms/FormikForms";
+import Playground from "./components/Apps/Playground/Playground";
 
 const App = () => {
   const {darkMode} = useContext(MainContext);
@@ -31,6 +32,7 @@ const App = () => {
       <Route path="/product-table" element={<ProductTable />} />
       <Route path="/user-list" element={<UserList />} />
       <Route path="/formik-forms" element={<FormikForms />} />
+      <Route path="/playground" element={<Playground />} />
     </Routes>
   );
 };
