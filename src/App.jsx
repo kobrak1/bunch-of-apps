@@ -14,6 +14,7 @@ import ProductTable from "./components/Apps/ProductTable/ProductTable";
 import UserList from "./components/Apps/UserList/UserList";
 import FormikForms from "./components/Apps/FormikForms/FormikForms";
 import Playground from "./components/Apps/Playground/Playground";
+import HocExample from "./components/Apps/HOC example/HocExample";
 
 const App = () => {
   const {darkMode} = useContext(MainContext);
@@ -33,6 +34,7 @@ const App = () => {
       <Route path="/user-list" element={<UserList />} />
       <Route path="/formik-forms" element={<FormikForms />} />
       <Route path="/playground" element={<Playground />} />
+      <Route path="/hoc-example" element={<HocExample />} />
     </Routes>
   );
 };

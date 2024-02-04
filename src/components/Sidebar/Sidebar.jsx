@@ -16,6 +16,7 @@ const Sidebar = () => {
           <NavLink to={"/user-list"}> <p>User List</p> </NavLink>
           <NavLink to={"/formik-forms"}> <p>Formik Forms</p> </NavLink>
           <NavLink to={"/playground"}> <p>Playground</p> </NavLink>
+          <NavLink to={"/hoc-example"}> <p>HOC example</p> </NavLink>
       </div>    
     </aside>
   );
